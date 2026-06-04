@@ -32,7 +32,7 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 #nav{position:fixed;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:22px 32px;border-bottom:.5px solid var(--border);z-index:100;background:var(--bg);}
 #nav-left{display:flex;align-items:center;gap:16px;}
 #nav-title{font-family:var(--font);font-weight:400;font-size:20px;letter-spacing:.12em;cursor:pointer;-webkit-tap-highlight-color:transparent;text-transform:uppercase;}
-#expo-badge{font-size:8px;letter-spacing:.22em;text-transform:uppercase;padding:4px 10px;border:.5px solid #b8860b;color:#b8860b;background:rgba(184,134,11,.08);}
+#expo-badge{font-size:12px;letter-spacing:.22em;text-transform:uppercase;padding:4px 10px;border:.5px solid #b8860b;color:#b8860b;background:rgba(184,134,11,.08);}
 #nav-right{display:flex;align-items:center;gap:20px;}
 #nav-questions{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);cursor:pointer;padding:8px 4px;border-bottom:.5px solid transparent;transition:color .2s,border-color .2s;-webkit-tap-highlight-color:transparent;}
 #nav-questions:hover,#nav-questions:active{color:var(--ink);border-color:var(--ink);}
@@ -45,21 +45,21 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 .page-inner{display:flex;flex-direction:column;align-items:center;gap:24px;width:100%;max-width:500px;min-height:100%;justify-content:center;padding-bottom:20px;}
 
 /* ── TYPO ── */
-.t-label{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);}
-.t-title{font-family:var(--font);font-weight:300;font-size:clamp(22px,4vw,42px);letter-spacing:.08em;line-height:1.15;text-align:center;}
+.t-label{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);}
+.t-title{font-family:var(--font);font-weight:300;font-size:clamp(24px,4vw,44px);letter-spacing:.08em;line-height:1.15;text-align:center;}
 .t-title-hero{font-family:var(--font);font-weight:200;font-size:clamp(36px,7vw,72px);letter-spacing:.1em;line-height:1.1;text-align:center;text-transform:uppercase;}
 
 /* ── PAGE INTRO ── */
-.intro-steps{display:flex;flex-direction:column;gap:18px;max-width:620px;width:100%;}
+.intro-steps{display:flex;flex-direction:column;gap:20px;max-width:620px;width:100%;}
 .step{display:flex;gap:20px;align-items:flex-start;}
-.step-num{font-size:16px;letter-spacing:.1em;color:var(--muted);min-width:28px;padding-top:2px;}
-.step-text{font-size:14px;letter-spacing:.06em;line-height:1.9;color:var(--ink);}
+.step-num{font-size:17px;letter-spacing:.1em;color:var(--muted);min-width:28px;padding-top:3px;}
+.step-text{font-size:15px;letter-spacing:.03em;line-height:1.85;color:var(--ink);}
 .divider{width:40px;height:.5px;background:var(--border);}
 
 /* ── BUTTONS ── */
-.btn{font-family:var(--font);font-size:11px;letter-spacing:.2em;text-transform:uppercase;padding:12px 22px;border:.5px solid var(--muted);background:transparent;color:var(--ink);cursor:pointer;transition:background .15s,border-color .15s,color .15s;-webkit-tap-highlight-color:transparent;touch-action:manipulation;min-height:44px;font-weight:400;}
+.btn{font-family:var(--font);font-size:12px;letter-spacing:.18em;text-transform:uppercase;padding:13px 24px;border:.5px solid var(--muted);background:transparent;color:var(--ink);cursor:pointer;transition:background .15s,border-color .15s,color .15s;-webkit-tap-highlight-color:transparent;touch-action:manipulation;min-height:46px;font-weight:400;}
 .btn:hover,.btn:active{background:var(--bg2);border-color:var(--ink);}
-.btn-primary{border-color:var(--ink);padding:14px 28px;font-size:10px;}
+.btn-primary{border-color:var(--ink);padding:15px 30px;font-size:12px;}
 .btn-primary:hover,.btn-primary:active{background:var(--ink);color:var(--bg);}
 .btn-danger{border-color:var(--red);color:var(--red);}
 .btn-danger:hover,.btn-danger:active{background:var(--red-bg);}
@@ -72,15 +72,15 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 .card-icon{width:36px;height:36px;border-radius:50%;}
 .card-icon.leger{background:var(--green-bg);border:.5px solid var(--green);}
 .card-icon.lourd{background:var(--red-bg);border:.5px solid var(--red);}
-.card-title{font-size:10px;letter-spacing:.14em;text-transform:uppercase;}
+.card-title{font-size:13px;letter-spacing:.14em;text-transform:uppercase;}
 .card-title.leger{color:var(--green);}
 .card-title.lourd{color:var(--red);}
-.card-desc{font-size:9px;letter-spacing:.08em;line-height:1.8;color:var(--muted);}
+.card-desc{font-size:12px;letter-spacing:.04em;line-height:1.8;color:var(--muted);}
 
 /* ── PAGE SPIRALE ── */
 #p-spirale{justify-content:flex-start;}
 #spiral-header{display:flex;flex-direction:column;align-items:center;gap:4px;margin-bottom:8px;margin-top:4px;}
-#spiral-type-badge{font-size:9px;letter-spacing:.18em;text-transform:uppercase;padding:3px 12px;border:.5px solid var(--muted);color:var(--muted);transition:all .3s;}
+#spiral-type-badge{font-size:11px;letter-spacing:.16em;text-transform:uppercase;padding:4px 14px;border:.5px solid var(--muted);color:var(--muted);transition:all .3s;}
 #spiral-type-badge.leger{border-color:var(--green);color:var(--green);}
 #spiral-type-badge.lourd{border-color:var(--red);color:var(--red);}
 #canvas-wrap{position:relative;width:min(380px,78vmin);height:min(380px,78vmin);border:.5px solid var(--border);background:var(--cvs);flex-shrink:0;}
@@ -90,14 +90,14 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 #spiral-svg{width:100%;height:100%;display:block;}
 #vumeter{width:min(380px,78vmin);height:2px;background:var(--border);margin-top:6px;overflow:hidden;}
 #vubar{height:100%;width:0%;background:var(--ink);transition:width .04s;}
-#spiral-meta{margin-top:6px;font-size:8px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;text-align:center;}
-#spiral-transcript{margin-top:3px;font-size:9px;letter-spacing:.06em;font-style:italic;color:var(--muted2);text-align:center;width:min(380px,78vmin);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-height:12px;}
+#spiral-meta{margin-top:6px;font-size:11px;letter-spacing:.1em;color:var(--muted);text-transform:uppercase;text-align:center;}
+#spiral-transcript{margin-top:3px;font-size:12px;letter-spacing:.04em;font-style:italic;color:var(--muted);text-align:center;width:min(380px,78vmin);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-height:14px;}
 #spiral-controls{display:flex;gap:8px;margin-top:8px;align-items:center;flex-wrap:wrap;justify-content:center;}
 #btn-rec.on{background:var(--red);border-color:var(--red);color:#fff;}
 #btn-rec.on:hover,#btn-rec.on:active{background:#a93226;}
 #btn-rec.on::before{content:'';display:inline-block;width:5px;height:5px;border-radius:50%;background:#fff;margin-right:7px;vertical-align:middle;animation:blink 1s infinite;}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.1}}
-#spiral-msg{margin-top:5px;font-size:9px;letter-spacing:.1em;color:var(--muted2);text-transform:uppercase;text-align:center;min-height:11px;}
+#spiral-msg{margin-top:5px;font-size:12px;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;text-align:center;min-height:14px;}
 
 /* ── OVERLAYS shared ── */
 .overlay{display:none;position:fixed;inset:0;z-index:200;background:rgba(10,10,10,.93);align-items:flex-start;justify-content:center;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:60px 1rem 3rem;}
@@ -111,14 +111,14 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 }
 
 /* ── NAME OVERLAY ── */
-#name-input{font-family:var(--font);font-size:16px;letter-spacing:.12em;background:transparent;border:none;border-bottom:.5px solid var(--muted);color:var(--ink);padding:10px 0;outline:none;text-align:center;width:100%;-webkit-appearance:none;border-radius:0;}
+#name-input{font-family:var(--font);font-size:16px;letter-spacing:.08em;background:transparent;border:none;border-bottom:.5px solid var(--muted);color:var(--ink);padding:10px 0;outline:none;text-align:center;width:100%;-webkit-appearance:none;border-radius:0;}
 #name-input:focus{border-color:var(--ink);}
 #name-input:disabled{opacity:.3;cursor:not-allowed;}
 .anon-row{display:flex;align-items:center;gap:10px;cursor:pointer;padding:6px 0;-webkit-tap-highlight-color:transparent;touch-action:manipulation;}
-.anon-check{width:18px;height:18px;border:.5px solid var(--muted);display:flex;align-items:center;justify-content:center;font-size:11px;transition:background .15s,border-color .15s;flex-shrink:0;}
+.anon-check{width:20px;height:20px;border:.5px solid var(--muted);display:flex;align-items:center;justify-content:center;font-size:13px;transition:background .15s,border-color .15s;flex-shrink:0;}
 .anon-check.checked{background:var(--ink);border-color:var(--ink);color:var(--bg);}
-.anon-label{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);}
-#code-input-custom{font-family:var(--font);font-size:20px;letter-spacing:.28em;background:transparent;border:none;border-bottom:.5px solid var(--muted);color:var(--ink);padding:10px 0;outline:none;text-align:center;text-transform:uppercase;width:100%;-webkit-appearance:none;border-radius:0;}
+.anon-label{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);}
+#code-input-custom{font-family:var(--font);font-size:22px;letter-spacing:.24em;background:transparent;border:none;border-bottom:.5px solid var(--muted);color:var(--ink);padding:10px 0;outline:none;text-align:center;text-transform:uppercase;width:100%;-webkit-appearance:none;border-radius:0;}
 #code-input-custom:focus{border-bottom-color:var(--ink);}
 
 /* ── CODE OVERLAY ── */
@@ -126,14 +126,14 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 #code-overlay.show{display:flex;}
 .code-box{border:.5px solid var(--muted);padding:32px 28px;background:var(--bg);display:flex;flex-direction:column;align-items:center;gap:16px;max-width:420px;width:100%;}
 #code-value{font-size:clamp(28px,8vw,42px);letter-spacing:.34em;color:var(--ink);font-weight:300;font-family:var(--font);}
-.code-hint{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-align:center;max-width:300px;line-height:2;}
+.code-hint{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:center;max-width:300px;line-height:2;}
 
 /* ── COLLECTION ── */
 #p-collection{justify-content:flex-start;}
 #coll-top{display:flex;flex-direction:column;align-items:center;gap:10px;width:100%;max-width:880px;}
 #coll-title-row{display:flex;align-items:baseline;gap:16px;}
-#collection-count{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);}
-#search-input{font-family:var(--font);font-size:10px;letter-spacing:.1em;width:100%;max-width:500px;background:transparent;border:.5px solid var(--muted);color:var(--ink);padding:11px 14px;outline:none;transition:border-color .2s;-webkit-appearance:none;border-radius:0;min-height:44px;}
+#collection-count{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);}
+#search-input{font-family:var(--font);font-size:13px;letter-spacing:.06em;width:100%;max-width:500px;background:transparent;border:.5px solid var(--muted);color:var(--ink);padding:12px 16px;outline:none;transition:border-color .2s;-webkit-appearance:none;border-radius:0;min-height:46px;}
 #search-input::placeholder{color:var(--muted2);}
 #search-input:focus{border-color:var(--ink);}
 #secrets-grid{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;max-width:880px;padding-bottom:40px;width:100%;}
@@ -141,37 +141,37 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 .secret-card:hover,.secret-card:active{border-color:var(--muted);}
 .card-canvas-wrap{width:100%;aspect-ratio:1;background:var(--cvs);overflow:hidden;position:relative;}
 .card-canvas-wrap canvas{width:100%;height:100%;display:block;}
-.card-dl-btn{position:absolute;bottom:6px;right:6px;font-family:var(--font);font-size:7px;letter-spacing:.14em;text-transform:uppercase;background:rgba(10,10,10,.8);border:.5px solid var(--muted);color:var(--muted);padding:5px 8px;cursor:pointer;opacity:0;transition:opacity .2s;-webkit-tap-highlight-color:transparent;touch-action:manipulation;}
+.card-dl-btn{position:absolute;bottom:6px;right:6px;font-family:var(--font);font-size:10px;letter-spacing:.1em;text-transform:uppercase;background:rgba(10,10,10,.8);border:.5px solid var(--muted);color:var(--muted);padding:5px 8px;cursor:pointer;opacity:0;transition:opacity .2s;-webkit-tap-highlight-color:transparent;touch-action:manipulation;}
 .secret-card:hover .card-dl-btn,.secret-card:active .card-dl-btn{opacity:1;}
 /* toujours visible sur mobile */
 @media(hover:none){.card-dl-btn{opacity:1;}}
-.card-info{padding:8px 10px 10px;display:flex;flex-direction:column;gap:3px;border-top:.5px solid var(--border);}
-.card-name{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.card-meta-line{font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.card-badge{display:inline-block;font-size:7px;letter-spacing:.12em;text-transform:uppercase;padding:2px 7px;margin-top:2px;}
+.card-info{padding:8px 10px 10px;display:flex;flex-direction:column;gap:4px;border-top:.5px solid var(--border);}
+.card-name{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.card-meta-line{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.card-badge{display:inline-block;font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;margin-top:2px;}
 .card-badge.leger{color:var(--green);border:.5px solid var(--green);background:var(--green-bg);}
 .card-badge.lourd{color:var(--red);border:.5px solid var(--red);background:var(--red-bg);}
-.empty-msg{font-size:10px;letter-spacing:.1em;color:var(--muted);text-transform:uppercase;margin-top:20px;text-align:center;}
-#coll-status{font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted2);text-align:center;}
+.empty-msg{font-size:13px;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;margin-top:20px;text-align:center;}
+#coll-status{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted2);text-align:center;}
 
 /* ── ACCESS OVERLAY ── */
 #access-canvas{border:.5px solid var(--border);background:var(--cvs);width:min(300px,72vmin);height:min(300px,72vmin);}
-#access-secret-info{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);text-align:center;}
+#access-secret-info{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:center;}
 #access-transcript-wrap{width:100%;display:flex;flex-direction:column;gap:8px;}
-#access-transcript{font-size:11px;letter-spacing:.06em;line-height:2.2;color:var(--ink);font-style:italic;text-align:left;width:100%;padding:16px;border:.5px solid var(--border);background:var(--cvs);white-space:pre-wrap;word-break:break-word;max-height:200px;overflow-y:auto;}
+#access-transcript{font-size:13px;letter-spacing:.04em;line-height:2;color:var(--ink);font-style:italic;text-align:left;width:100%;padding:16px;border:.5px solid var(--border);background:var(--cvs);white-space:pre-wrap;word-break:break-word;max-height:200px;overflow-y:auto;}
 #access-code-input{font-family:var(--font);font-size:22px;letter-spacing:.3em;background:transparent;border:none;border-bottom:.5px solid var(--muted);color:var(--ink);padding:10px 0;outline:none;text-align:center;text-transform:uppercase;width:100%;-webkit-appearance:none;border-radius:0;}
 #access-code-input:focus{border-bottom-color:var(--ink);}
-#access-error{font-size:9px;letter-spacing:.1em;color:var(--red);text-transform:uppercase;min-height:12px;align-self:flex-start;}
+#access-error{font-size:12px;letter-spacing:.08em;color:var(--red);text-transform:uppercase;min-height:14px;align-self:flex-start;}
 #access-spiral-wrap{display:none;flex-direction:column;gap:14px;width:100%;align-items:center;}
 #access-spiral-wrap.show{display:flex;}
 /* audio player */
 #audio-player-wrap{display:none;flex-direction:column;align-items:center;gap:10px;width:100%;}
 #audio-player-wrap.show{display:flex;}
 #audio-player{width:100%;height:44px;}
-.player-label{font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);}
+.player-label{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);}
 /* destroy zone */
 #destroy-wrap{width:100%;display:flex;flex-direction:column;gap:8px;border-top:.5px solid var(--border);padding-top:16px;margin-top:4px;}
-#destroy-confirm{display:none;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:center;line-height:2;}
+#destroy-confirm{display:none;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:center;line-height:2;}
 
 /* ── LOADING INDICATOR ── */
 #coll-loading{display:flex;align-items:center;justify-content:center;gap:8px;padding:20px;}
@@ -184,19 +184,19 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 @media(max-width:600px){
   .obox{padding:20px 16px;}
   #spiral-controls{gap:6px;}
-  .btn{padding:12px 16px;font-size:8px;}
+  .btn{padding:12px 16px;font-size:12px;}
 }
 
 /* ── PAGE IMPRESSION ── */
 .print-options{display:flex;flex-direction:column;gap:24px;width:100%;max-width:440px;}
 .print-section{display:flex;flex-direction:column;gap:10px;}
-.print-section-title{font-size:8px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);border-bottom:.5px solid var(--border);padding-bottom:8px;}
+.print-section-title{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);border-bottom:.5px solid var(--border);padding-bottom:8px;}
 .print-choices{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;}
 .print-choice{flex:1;min-width:90px;border:.5px solid var(--muted);padding:16px 12px;cursor:pointer;transition:border-color .2s,background .2s;display:flex;flex-direction:column;align-items:center;gap:8px;-webkit-tap-highlight-color:transparent;touch-action:manipulation;}
 .print-choice:hover,.print-choice:active{background:var(--bg2);border-color:var(--ink);}
 .print-choice.selected{border-color:#b8860b;background:rgba(184,134,11,.08);}
 .print-choice-label{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);}
-.print-choice-sub{font-size:8px;letter-spacing:.08em;color:var(--muted);text-align:center;line-height:1.7;}
+.print-choice-sub{font-size:12px;letter-spacing:.08em;color:var(--muted);text-align:center;line-height:1.7;}
 .print-choice-icon{font-size:20px;opacity:.6;}
 
 /* ── PAGE QUESTIONS ── */
@@ -222,12 +222,12 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 .pq-info-line{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);}
 .pq-info-line strong{color:var(--ink);}
 .pq-actions{display:flex;gap:6px;flex-wrap:wrap;}
-.pq-btn-done{font-family:var(--font);font-size:8px;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px;border:.5px solid var(--green);background:transparent;color:var(--green);cursor:pointer;-webkit-tap-highlight-color:transparent;}
+.pq-btn-done{font-family:var(--font);font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px;border:.5px solid var(--green);background:transparent;color:var(--green);cursor:pointer;-webkit-tap-highlight-color:transparent;}
 .pq-btn-done:hover{background:var(--green-bg);}
-.pq-btn-svg{font-family:var(--font);font-size:8px;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px;border:.5px solid var(--muted);background:transparent;color:var(--muted);cursor:pointer;-webkit-tap-highlight-color:transparent;}
+.pq-btn-svg{font-family:var(--font);font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px;border:.5px solid var(--muted);background:transparent;color:var(--muted);cursor:pointer;-webkit-tap-highlight-color:transparent;}
 .pq-btn-svg:hover{border-color:var(--ink);color:var(--ink);}
 .pq-empty{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted2);text-align:center;padding:20px;}
-#pq-admin-toggle{position:fixed;bottom:20px;right:20px;z-index:150;font-family:var(--font);font-size:8px;letter-spacing:.16em;text-transform:uppercase;padding:10px 16px;border:.5px solid var(--muted2);background:var(--bg);color:var(--muted2);cursor:pointer;opacity:.5;-webkit-tap-highlight-color:transparent;}
+#pq-admin-toggle{position:fixed;bottom:20px;right:20px;z-index:150;font-family:var(--font);font-size:12px;letter-spacing:.16em;text-transform:uppercase;padding:10px 16px;border:.5px solid var(--muted2);background:var(--bg);color:var(--muted2);cursor:pointer;opacity:.5;-webkit-tap-highlight-color:transparent;}
 #pq-admin-toggle:hover{opacity:1;border-color:var(--muted);color:var(--muted);}
 
 </style>
@@ -320,7 +320,7 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
     <div class="t-label">avant de sceller ton secret</div>
 
     <div style="width:100%;display:flex;flex-direction:column;gap:6px;">
-      <div style="font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);">Ton prénom (optionnel)</div>
+      <div style="font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);">Ton prénom (optionnel)</div>
       <input id="name-input" type="text" placeholder="ton prénom…" maxlength="40" autocomplete="off"/>
       <div class="anon-row" onclick="toggleAnon()" ontouchend="event.preventDefault();toggleAnon()">
         <div class="anon-check" id="anon-check"></div>
@@ -331,27 +331,27 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
     <div style="width:100%;height:.5px;background:var(--border);"></div>
 
     <div style="width:100%;display:flex;flex-direction:column;gap:6px;">
-      <div style="font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);">Mots-clés / titre (optionnel)</div>
+      <div style="font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);">Mots-clés / titre (optionnel)</div>
       <input id="tags-input" type="text" placeholder="ex: amour, enfance, regret…" maxlength="60" autocomplete="off"
         oninput="currentTags=this.value.trim();setMeta(currentTags);"
         style="font-family:var(--font);font-size:14px;letter-spacing:.08em;background:transparent;border:none;border-bottom:.5px solid var(--muted);color:var(--ink);padding:10px 0;outline:none;width:100%;-webkit-appearance:none;border-radius:0;"/>
-      <div style="font-size:8px;letter-spacing:.1em;color:var(--muted2);line-height:1.8;">Quelques mots pour décrire ton secret. Apparaîtra sous la spirale.</div>
+      <div style="font-size:12px;letter-spacing:.1em;color:var(--muted2);line-height:1.8;">Quelques mots pour décrire ton secret. Apparaîtra sous la spirale.</div>
     </div>
 
     <div style="width:100%;height:.5px;background:var(--border);"></div>
 
     <div style="width:100%;display:flex;flex-direction:column;gap:6px;">
-      <div style="font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);">Choisis ton code d'accès (4–6 caractères)</div>
+      <div style="font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);">Choisis ton code d'accès (4–6 caractères)</div>
       <input id="code-input-custom" type="text" maxlength="6" placeholder="ex: MON123" autocomplete="off" autocorrect="off" autocapitalize="characters" spellcheck="false"
         oninput="this.value=this.value.toUpperCase().replace(/[^A-Z0-9]/g,'');validateCustomCode()"/>
-      <div id="code-input-error" style="font-size:8px;letter-spacing:.12em;color:var(--red);text-transform:uppercase;min-height:11px;text-align:center;"></div>
-      <div style="font-size:8px;letter-spacing:.1em;color:var(--muted2);text-align:center;line-height:1.8;">Lettres et chiffres uniquement. Note-le bien.</div>
+      <div id="code-input-error" style="font-size:12px;letter-spacing:.12em;color:var(--red);text-transform:uppercase;min-height:11px;text-align:center;"></div>
+      <div style="font-size:12px;letter-spacing:.1em;color:var(--muted2);text-align:center;line-height:1.8;">Lettres et chiffres uniquement. Note-le bien.</div>
     </div>
 
     <div id="mobile-transcript-section" style="width:100%;flex-direction:column;gap:6px;display:none;">
       <div style="width:100%;height:.5px;background:var(--border);"></div>
-      <div style="font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);">Texte de ton secret (optionnel)</div>
-      <div style="font-size:8px;letter-spacing:.1em;color:var(--muted2);line-height:1.8;">La transcription auto n'est pas disponible sur mobile. Tu peux écrire ton secret ici.</div>
+      <div style="font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);">Texte de ton secret (optionnel)</div>
+      <div style="font-size:12px;letter-spacing:.1em;color:var(--muted2);line-height:1.8;">La transcription auto n'est pas disponible sur mobile. Tu peux écrire ton secret ici.</div>
       <textarea id="manual-transcript" rows="4" placeholder="Écris ton secret ici (optionnel)…" autocomplete="off" spellcheck="false"
         style="font-family:var(--font);font-size:12px;letter-spacing:.06em;background:var(--cvs);border:.5px solid var(--muted);color:var(--ink);padding:10px;outline:none;width:100%;resize:vertical;-webkit-appearance:none;border-radius:0;line-height:1.6;"></textarea>
     </div>
@@ -411,13 +411,13 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 
       <!-- transcript -->
       <div id="access-transcript-wrap">
-        <div style="font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);">Texte du secret</div>
+        <div style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);">Texte du secret</div>
         <div id="access-transcript"></div>
       </div>
 
       <!-- destroy -->
       <div id="destroy-wrap">
-        <div style="font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-align:center;">Zone de suppression</div>
+        <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-align:center;">Zone de suppression</div>
         <div id="destroy-confirm">Es-tu sûr(e) ? Cette action est irréversible.</div>
         <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;">
           <button class="btn btn-danger" id="btn-destroy-1" onclick="destroyStep1()">Détruire mon secret</button>
@@ -537,7 +537,7 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
       <div class="pq-title">File d'attente — Impression</div>
       <button class="btn" onclick="closePrintQueue()">Fermer</button>
     </div>
-    <div style="font-size:8px;letter-spacing:.12em;color:var(--muted2);text-transform:uppercase;">Cliquer sur "Imprimé ✓" pour retirer un élément de la file.</div>
+    <div style="font-size:12px;letter-spacing:.12em;color:var(--muted2);text-transform:uppercase;">Cliquer sur "Imprimé ✓" pour retirer un élément de la file.</div>
     <div id="pq-list"></div>
   </div>
 </div>
@@ -557,36 +557,29 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
   canvas.width = W; canvas.height = H;
   const ctx = canvas.getContext('2d');
   const cx = W/2, cy = H/2;
-  const fakeSamples = [];
-  let drawn = 0;
-  const totalPts = 1200;
-  for(let i=0;i<totalPts;i++){
-    fakeSamples.push(Math.sin(i*0.18)*0.3 + Math.sin(i*0.07)*0.15);
-  }
-  const MAX_R_S = Math.min(W,H)*0.38;
-  function drawSplashSpiral(n){
-    ctx.clearRect(0,0,W,H);
-    ctx.fillStyle='#111'; ctx.fillRect(0,0,W,H);
-    if(n<2) return;
-    ctx.save();
-    ctx.strokeStyle='rgba(232,228,220,0.7)';
-    ctx.lineWidth=0.9; ctx.lineCap='round'; ctx.lineJoin='round';
-    ctx.beginPath();
-    let sPrev=0;
-    for(let i=0;i<n;i++){
-      const s=fakeSamples[i];
-      sPrev=sPrev*0.88+s*0.12;
-      const angle=i*0.12, baseR=i*0.065;
-      const off=sPrev*55*(1+0.05);
-      let x=Math.cos(angle)*(baseR+off), y=Math.sin(angle)*(baseR+off);
-      const d=Math.sqrt(x*x+y*y);
-      if(d>MAX_R_S){const sc=MAX_R_S/d;x*=sc;y*=sc;}
-      x+=cx; y+=cy;
-      if(i===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
-    }
-    ctx.stroke(); ctx.restore();
-  }
-  const words = ['secrets','murmures','silences','aveux','vérités'];
+
+  // Fond initial pendant le chargement
+  ctx.fillStyle='#111'; ctx.fillRect(0,0,W,H);
+
+
+  const words = [
+    'ta voix dessine',
+    'un secret léger',
+    'un secret lourd',
+    'ce que tu gardes',
+    'parle dans le micro',
+    "ta spirale t'appartient",
+    'une trace sonore',
+    'confie-le',
+    'personne ne sait',
+    'sauf toi',
+    'une empreinte unique',
+    'dis-le enfin',
+    'il disparaîtra',
+    'art sonore',
+    'secrets partagés',
+    'ta voix reste'
+  ];
   let wi=0;
   function cycleWord(){
     wordEl.classList.remove('show');
@@ -594,17 +587,20 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
   }
   cycleWord();
   const wordTimer = setInterval(cycleWord, 2800);
-  let raf;
-  function animate(){
-    drawn = Math.min(drawn+6, totalPts);
-    drawSplashSpiral(drawn);
-    if(drawn<totalPts){ raf=requestAnimationFrame(animate); }
-    else { setTimeout(()=>{ enterEl.classList.add('show'); },600); }
-  }
-  animate();
+
+  window._splashWordTimer = wordTimer;
+
+  // Lancer l'animation une fois les secrets chargés (ou après 2s max)
+  let splashStarted = false;
+  window._startSplashWithSecrets = function(){
+    if(splashStarted) return;
+    splashStarted = true;
+    runCollectionSplash(canvas, ctx, cx, cy, W, H, enterEl);
+  };
+  setTimeout(()=> window._startSplashWithSecrets(), 2000);
+
   window.exitSplash = function(){
     clearInterval(wordTimer);
-    cancelAnimationFrame(raf);
     document.getElementById('splash').classList.add('hidden');
     setTimeout(()=>{ document.getElementById('splash').style.display='none'; },1000);
     goPage('intro');
@@ -1022,27 +1018,71 @@ async function savePrintJob(secret){
     done: false,
     created_at: Date.now()
   };
+
+  // Toujours sauver en localStorage d'abord (source de vérité locale)
+  _savePrintJobLocal(job);
+
+  // Essayer Supabase en parallèle (optionnel)
   try{
     const r = await fetch(`${SUPABASE_URL}/rest/v1/print_queue`, {
       method:'POST',
       headers:{...SB_HEADERS,'Prefer':'return=minimal'},
       body:JSON.stringify(job)
     });
-    if(!r.ok) console.warn('Print queue save error:', await r.text());
-    else _printQueue.push(job);
-  }catch(e){ console.warn('Print queue save error:',e); _printQueue.push(job); }
+    if(!r.ok){
+      const errText = await r.text();
+      console.warn('Print queue Supabase save error:', errText);
+      // Si table inexistante (42P01), on reste sur localStorage — ça marche quand même
+    }
+  }catch(e){ console.warn('Print queue Supabase unreachable, using localStorage:', e); }
+}
+
+function _savePrintJobLocal(job){
+  try{
+    const existing = JSON.parse(localStorage.getItem('print_queue_v1')||'[]');
+    const idx = existing.findIndex(j=>j.code===job.code);
+    if(idx>=0) existing[idx]=job; else existing.push(job);
+    localStorage.setItem('print_queue_v1', JSON.stringify(existing));
+    _printQueue = existing;
+  }catch(e){ console.warn('localStorage print queue error:',e); }
 }
 
 async function loadPrintQueue(){
+  // Charger depuis localStorage en priorité
+  try{
+    const local = JSON.parse(localStorage.getItem('print_queue_v1')||'[]');
+    _printQueue = local;
+  }catch(e){ _printQueue = []; }
+
+  // Essayer de fusionner avec Supabase
   try{
     const r = await fetch(`${SUPABASE_URL}/rest/v1/print_queue?order=created_at.asc`, {
       headers:{...SB_HEADERS}
     });
-    if(r.ok) _printQueue = await r.json();
-  }catch(e){ console.warn('Print queue load error:',e); }
+    if(r.ok){
+      const remote = await r.json();
+      if(remote && remote.length > 0){
+        // Fusionner : remote prime sur local pour les entrées communes
+        const merged = [..._printQueue];
+        remote.forEach(rj=>{
+          const idx = merged.findIndex(j=>j.code===rj.code);
+          if(idx>=0) merged[idx]={...merged[idx],...rj};
+          else merged.push(rj);
+        });
+        _printQueue = merged;
+        localStorage.setItem('print_queue_v1', JSON.stringify(_printQueue));
+      }
+    }
+  }catch(e){ /* reste sur localStorage */ }
 }
 
 async function markPrintDone(code){
+  // Mettre à jour localStorage
+  const job = _printQueue.find(j=>j.code===code);
+  if(job) job.done=true;
+  try{ localStorage.setItem('print_queue_v1', JSON.stringify(_printQueue)); }catch(e){}
+
+  // Essayer Supabase
   try{
     await fetch(`${SUPABASE_URL}/rest/v1/print_queue?code=eq.${encodeURIComponent(code)}`, {
       method:'PATCH',
@@ -1050,8 +1090,6 @@ async function markPrintDone(code){
       body:JSON.stringify({done:true})
     });
   }catch(e){}
-  const job = _printQueue.find(j=>j.code===code);
-  if(job) job.done=true;
   renderPrintQueue();
 }
 
@@ -1139,7 +1177,7 @@ function renderPrintQueue(){
   container.innerHTML='';
   if(pending.length){
     const h=document.createElement('div');
-    h.style.cssText='font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:#b8860b;padding:4px 0 8px;';
+    h.style.cssText='font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#b8860b;padding:4px 0 8px;';
     h.textContent=`▸ En attente — ${pending.length} spirale${pending.length>1?'s':''}`;
     container.appendChild(h);
   }
@@ -1688,9 +1726,10 @@ function destroyCancel(){
    INIT
 ══════════════════════════════════════════════════ */
 (async function init(){
-  // Load shared secrets + migrate old data
   await loadSecretsFromStorage();
   await migrateOldData();
+  // Démarrer l'animation splash avec les vraies spirales dès qu'elles sont prêtes
+  if(window._startSplashWithSecrets) window._startSplashWithSecrets();
 })();
 
 /* ══════════════════════════════════════════════════
@@ -1726,6 +1765,112 @@ function destroyCancel(){
   resetIdle(); // démarrer le timer dès le chargement
 })();
 
+/* ══════════════════════════════════════════════════
+   SPLASH — COLLECTION SPIRALS
+   Dessine les vraies spirales de la collection
+   une par une, en les animant progressivement.
+══════════════════════════════════════════════════ */
+function runCollectionSplash(canvas, ctx, cx, cy, W, H, enterEl){
+  const secrets = getAllSecrets();
+  const MAX_R_S = Math.min(W,H) * 0.38;
+  let currentRaf = null;
+
+  // Fallback si pas encore de secrets
+  function makeFallbackSamples(){
+    const s = [];
+    for(let i=0;i<1200;i++) s.push({s:Math.sin(i*0.18)*0.3+Math.sin(i*0.07)*0.15, v:0.1});
+    return s;
+  }
+
+  function getSecretsList(){
+    const all = getAllSecrets();
+    return all.length > 0 ? all : null;
+  }
+
+  function drawSpiralFrame(samps, type, progress, alpha){
+    const isL = type === 'leger';
+    const count = Math.floor(samps.length * progress);
+    if(count < 2) return;
+    ctx.save();
+    ctx.globalAlpha = alpha;
+    ctx.strokeStyle = isL ? '#8bbf8e' : '#c0392b';
+    ctx.lineWidth = isL ? 1.1 : 0.9;
+    ctx.lineCap = isL ? 'round' : 'butt';
+    ctx.lineJoin = isL ? 'round' : 'miter';
+    ctx.beginPath();
+    let sPrev = 0;
+    const radStep = isL ? 0.06 : 0.07, amp = isL ? 45 : 160, volMult = isL ? 18 : 70, smooth = isL ? 0.85 : 0.35;
+    for(let i = 0; i < count; i++){
+      const {s, v} = samps[i];
+      const sS = isL ? (sPrev = sPrev*smooth + s*(1-smooth)) : s;
+      let ap = 0; if(!isL) ap = sS*1.4*Math.sin(i*0.28+sS*15);
+      const angle = i*0.12+ap, baseR = i*radStep, off = sS*amp*(1+v*volMult);
+      let x = Math.cos(angle)*(baseR+off), y = Math.sin(angle)*(baseR+off);
+      const dist = Math.sqrt(x*x+y*y);
+      const maxR = MAX_R_S;
+      if(dist > maxR){const sc=maxR/dist; x*=sc; y*=sc;}
+      x += cx; y += cy;
+      if(i===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+    }
+    ctx.stroke();
+    ctx.restore();
+  }
+
+  const DRAW_SPEED = 0.004;   // vitesse de tracé
+  const HOLD_FRAMES = 80;      // frames de pause une fois tracée
+  const FADE_FRAMES = 40;      // frames de fondu sortant
+
+  let secretsList = getSecretsList();
+  let idx = 0;
+  let phase = 'draw'; // draw | hold | fade
+  let progress = 0;
+  let holdCount = 0;
+  let fadeAlpha = 1;
+
+  function nextSecret(){
+    if(!secretsList || secretsList.length === 0){
+      secretsList = [{samples: makeFallbackSamples(), type:'leger'}];
+    }
+    idx = (idx + 1) % secretsList.length;
+    progress = 0;
+    holdCount = 0;
+    fadeAlpha = 1;
+    phase = 'draw';
+  }
+
+  function loop(){
+    currentRaf = requestAnimationFrame(loop);
+    ctx.clearRect(0,0,W,H);
+    ctx.fillStyle='#111'; ctx.fillRect(0,0,W,H);
+
+    if(!secretsList || secretsList.length === 0){
+      secretsList = getSecretsList();
+      if(!secretsList){ enterEl.classList.add('show'); return; }
+    }
+
+    const secret = secretsList[idx % secretsList.length];
+    const samps = secret.samples;
+    const type = secret.type || 'leger';
+
+    if(phase === 'draw'){
+      progress = Math.min(progress + DRAW_SPEED, 1);
+      drawSpiralFrame(samps, type, progress, 1);
+      if(progress >= 1){ phase = 'hold'; enterEl.classList.add('show'); }
+    } else if(phase === 'hold'){
+      drawSpiralFrame(samps, type, 1, 1);
+      holdCount++;
+      if(holdCount >= HOLD_FRAMES) phase = 'fade';
+    } else if(phase === 'fade'){
+      fadeAlpha = Math.max(fadeAlpha - 1/FADE_FRAMES, 0);
+      drawSpiralFrame(samps, type, 1, fadeAlpha);
+      if(fadeAlpha <= 0) nextSecret();
+    }
+  }
+
+  loop();
+  return ()=> cancelAnimationFrame(currentRaf);
+}
+
 function restartSplashAnimation(){
   const canvas = document.getElementById('splash-canvas');
   const wordEl = document.getElementById('splash-word');
@@ -1734,98 +1879,46 @@ function restartSplashAnimation(){
   canvas.width = W; canvas.height = H;
   const ctx = canvas.getContext('2d');
   const cx = W/2, cy = H/2;
-  const fakeSamples = [];
-  const totalPts = 1200;
-  for(let i=0;i<totalPts;i++){
-    fakeSamples.push(Math.sin(i*0.18)*0.3 + Math.sin(i*0.07)*0.15);
-  }
-  const MAX_R_S = Math.min(W,H)*0.38;
-  function drawSplashSpiral(n){
-    ctx.clearRect(0,0,W,H);
-    ctx.fillStyle='#111'; ctx.fillRect(0,0,W,H);
-    if(n<2) return;
-    ctx.save();
-    ctx.strokeStyle='rgba(232,228,220,0.7)';
-    ctx.lineWidth=0.9; ctx.lineCap='round'; ctx.lineJoin='round';
-    ctx.beginPath();
-    let sPrev=0;
-    for(let i=0;i<n;i++){
-      const s=fakeSamples[i];
-      sPrev=sPrev*0.88+s*0.12;
-      const angle=i*0.12, baseR=i*0.065;
-      const off=sPrev*55*(1+0.05);
-      let x=Math.cos(angle)*(baseR+off), y=Math.sin(angle)*(baseR+off);
-      const d=Math.sqrt(x*x+y*y);
-      if(d>MAX_R_S){const sc=MAX_R_S/d;x*=sc;y*=sc;}
-      x+=cx; y+=cy;
-      if(i===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
-    }
-    ctx.stroke(); ctx.restore();
-  }
-  // spirale continue qui évolue au-delà de totalPts
-  let drawn = 0;
-  const words = ['secrets','murmures','silences','aveux','vérités'];
-  let wi = 0;
+
+  ctx.fillStyle='#111'; ctx.fillRect(0,0,W,H);
+
   wordEl.classList.remove('show');
   enterEl.classList.remove('show');
+
+  const words = [
+    'ta voix dessine',
+    'un secret léger',
+    'un secret lourd',
+    'ce que tu gardes',
+    'parle dans le micro',
+    "ta spirale t'appartient",
+    'une trace sonore',
+    'confie-le',
+    'personne ne sait',
+    'sauf toi',
+    'une empreinte unique',
+    'dis-le enfin',
+    'il disparaîtra',
+    'art sonore',
+    'secrets partagés',
+    'ta voix reste'
+  ];
+  let wi = 0;
   function cycleWord(){
     wordEl.classList.remove('show');
     setTimeout(()=>{ wordEl.textContent=words[wi%words.length]; wi++; wordEl.classList.add('show'); },400);
   }
   cycleWord();
   const wordTimer = setInterval(cycleWord, 2800);
-  let raf;
-  function animate(){
-    drawn = Math.min(drawn+6, totalPts);
-    drawSplashSpiral(drawn);
-    if(drawn < totalPts){
-      raf = requestAnimationFrame(animate);
-    } else {
-      // Spirale complète — continuer à évoluer légèrement
-      enterEl.classList.add('show');
-      animateIdle(fakeSamples, ctx, cx, cy, MAX_R_S, totalPts);
-    }
-  }
-  animate();
-  // Réassigner exitSplash pour nettoyer le nouveau timer
+
+  runCollectionSplash(canvas, ctx, cx, cy, W, H, enterEl);
+
   window.exitSplash = function(){
     clearInterval(wordTimer);
-    cancelAnimationFrame(raf);
     document.getElementById('splash').classList.add('hidden');
     setTimeout(()=>{ document.getElementById('splash').style.display='none'; },1000);
     goPage('intro');
   };
-}
-
-function animateIdle(fakeSamples, ctx, cx, cy, MAX_R_S, totalPts){
-  // Après que la spirale est complète, elle pulse doucement
-  let t = 0;
-  const W = ctx.canvas.width, H = ctx.canvas.height;
-  function pulse(){
-    t += 0.008;
-    const modSamples = fakeSamples.map((s,i) => s + Math.sin(t + i*0.04)*0.06);
-    ctx.clearRect(0,0,W,H);
-    ctx.fillStyle='#111'; ctx.fillRect(0,0,W,H);
-    ctx.save();
-    ctx.strokeStyle='rgba(232,228,220,0.7)';
-    ctx.lineWidth=0.9; ctx.lineCap='round'; ctx.lineJoin='round';
-    ctx.beginPath();
-    let sPrev=0;
-    for(let i=0;i<totalPts;i++){
-      const s=modSamples[i];
-      sPrev=sPrev*0.88+s*0.12;
-      const angle=i*0.12, baseR=i*0.065;
-      const off=sPrev*55*(1+0.05);
-      let x=Math.cos(angle)*(baseR+off), y=Math.sin(angle)*(baseR+off);
-      const d=Math.sqrt(x*x+y*y);
-      if(d>MAX_R_S){const sc=MAX_R_S/d;x*=sc;y*=sc;}
-      x+=cx; y+=cy;
-      if(i===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
-    }
-    ctx.stroke(); ctx.restore();
-    requestAnimationFrame(pulse);
-  }
-  pulse();
 }
 </script>
 </body>
