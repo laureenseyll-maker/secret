@@ -1123,22 +1123,26 @@ function buildSecretSVGString(secret){
   const date=secret.date||'';
   const tags=secret.tags||null;
   const txt1=document.createElementNS(svgNS,'text');
-  txt1.setAttribute('x','0');txt1.setAttribute('y','232');
+  txt1.setAttribute('x','0');txt1.setAttribute('y','252');
   txt1.setAttribute('text-anchor','middle');
   txt1.setAttribute('font-family','Jost,sans-serif');
   txt1.setAttribute('font-size','9');txt1.setAttribute('font-weight','300');
   txt1.setAttribute('letter-spacing','1.5');
-  txt1.setAttribute('fill','rgba(232,228,220,0.55)');
+  txt1.setAttribute('fill','none');
+  txt1.setAttribute('stroke','rgba(232,228,220,0.55)');
+  txt1.setAttribute('stroke-width','0.35');
   txt1.textContent=`${author}  —  ${date}`;
   svg.appendChild(txt1);
   if(tags){
     const txt2=document.createElementNS(svgNS,'text');
-    txt2.setAttribute('x','0');txt2.setAttribute('y','248');
+    txt2.setAttribute('x','0');txt2.setAttribute('y','268');
     txt2.setAttribute('text-anchor','middle');
     txt2.setAttribute('font-family','Jost,sans-serif');
     txt2.setAttribute('font-size','8');txt2.setAttribute('font-weight','300');
     txt2.setAttribute('letter-spacing','1.8');
-    txt2.setAttribute('fill','rgba(232,228,220,0.3)');
+    txt2.setAttribute('fill','none');
+    txt2.setAttribute('stroke','rgba(232,228,220,0.3)');
+    txt2.setAttribute('stroke-width','0.3');
     txt2.textContent=tags.toUpperCase();
     svg.appendChild(txt2);
   }
@@ -1280,26 +1284,30 @@ function exportSVGWithMeta(secret){
   // Line 1: author + date
   const line1 = `${author}  —  ${date}`;
   const txt1=document.createElementNS(NS,'text');
-  txt1.setAttribute('x','0'); txt1.setAttribute('y','232');
+  txt1.setAttribute('x','0'); txt1.setAttribute('y','252');
   txt1.setAttribute('text-anchor','middle');
   txt1.setAttribute('font-family','Jost,sans-serif');
   txt1.setAttribute('font-size','9');
   txt1.setAttribute('font-weight','300');
   txt1.setAttribute('letter-spacing','1.5');
-  txt1.setAttribute('fill','rgba(232,228,220,0.55)');
+  txt1.setAttribute('fill','none');
+  txt1.setAttribute('stroke','rgba(232,228,220,0.55)');
+  txt1.setAttribute('stroke-width','0.35');
   txt1.textContent=line1;
   svg.appendChild(txt1);
 
   // Line 2: tags (only if present)
   if(tags){
     const txt2=document.createElementNS(NS,'text');
-    txt2.setAttribute('x','0'); txt2.setAttribute('y','248');
+    txt2.setAttribute('x','0'); txt2.setAttribute('y','268');
     txt2.setAttribute('text-anchor','middle');
     txt2.setAttribute('font-family','Jost,sans-serif');
     txt2.setAttribute('font-size','8');
     txt2.setAttribute('font-weight','300');
     txt2.setAttribute('letter-spacing','1.8');
-    txt2.setAttribute('fill','rgba(232,228,220,0.3)');
+    txt2.setAttribute('fill','none');
+    txt2.setAttribute('stroke','rgba(232,228,220,0.3)');
+    txt2.setAttribute('stroke-width','0.3');
     txt2.textContent=tags.toUpperCase();
     svg.appendChild(txt2);
   }
