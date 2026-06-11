@@ -1251,12 +1251,11 @@ function buildSecretSVGString(secret){
   const author=secret.author||'Anonyme';
   const date=secret.date||'';
   const tags=secret.tags||null;
-  // Hershey single-stroke text (plotter style)
-  const hScale = 0.45;
-  const line1text = author + '  —  ' + date;
-  hersheyText(svg, svgNS, line1text, 0, 252, hScale, 'rgba(232,228,220,0.6)', 0.8);
+  // Hershey Roman Simplex single-stroke text
+  const hSc = 0.55;
+  hersheyText(svg, svgNS, author + '  —  ' + date, 0, 252, hSc, 'rgba(232,228,220,0.6)', 0.9);
   if(tags){
-    hersheyText(svg, svgNS, tags.toUpperCase(), 0, 268, hScale * 0.88, 'rgba(232,228,220,0.35)', 0.7);
+    hersheyText(svg, svgNS, tags.toUpperCase(), 0, 272, hSc * 0.85, 'rgba(232,228,220,0.35)', 0.75);
   }
   return '<?xml version="1.0" encoding="UTF-8"?>\n'+svg.outerHTML;
 }
@@ -1393,12 +1392,11 @@ function exportSVGWithMeta(secret){
   const tags = secret.tags||(secret.city&&secret.city!=='lieu inconnu'?secret.city:null);
   const date = secret.date||'';
 
-  // Hershey single-stroke text (plotter style)
-  const hScale2 = 0.45;
-  const line1 = author + '  —  ' + date;
-  hersheyText(svg, NS, line1, 0, 252, hScale2, 'rgba(232,228,220,0.6)', 0.8);
+  // Hershey Roman Simplex single-stroke text
+  const hSc2 = 0.55;
+  hersheyText(svg, NS, author + '  —  ' + date, 0, 252, hSc2, 'rgba(232,228,220,0.6)', 0.9);
   if(tags){
-    hersheyText(svg, NS, tags.toUpperCase(), 0, 268, hScale2 * 0.88, 'rgba(232,228,220,0.35)', 0.7);
+    hersheyText(svg, NS, tags.toUpperCase(), 0, 272, hSc2 * 0.85, 'rgba(232,228,220,0.35)', 0.75);
   }
 
   // Serialize with proper XML declaration for valid standalone SVG
